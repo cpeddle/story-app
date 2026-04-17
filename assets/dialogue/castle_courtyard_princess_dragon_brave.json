@@ -1,0 +1,190 @@
+{
+  "treeId": "courtyard_princess_dragon_brave_001",
+  "scenarioId": "courtyard_brave_storm",
+  "traitId": "BRAVE",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Don't be scared of thunder, Dragon! I'll protect you.",
+        "nl": "Wees niet bang voor de donder, Draak! Ik bescherm jou."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Let's hide inside.",
+            "nl": "Laten we binnen gaan schuilen."
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "I will sing a song.",
+            "nl": "Ik ga een liedje zingen."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Look at the lightning!",
+            "nl": "Kijk naar de bliksem!"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Let's go to the castle. It's safe and warm there.",
+        "nl": "Laten we naar het kasteel gaan. Daar is het veilig en warm."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Follow me!",
+            "nl": "Volg mij!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Wait, stay here!",
+            "nl": "Wacht, blijf hier!"
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Hush now, listen to my song. Thunder is just noise.",
+        "nl": "Ssst, luister naar mijn liedje. Donder is maar lawaai."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Sing louder!",
+            "nl": "Zing harder!"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Stop singing.",
+            "nl": "Stop met zingen."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "See the bright lightning? It lights up the whole sky!",
+        "nl": "Zie je die felle bliksem? Die verlicht de hele lucht!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "Isn't it beautiful?",
+            "nl": "Is het niet mooi?"
+          },
+          "targetNodeId": "node_8"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "It's too scary.",
+            "nl": "Het is te eng."
+          },
+          "targetNodeId": "node_9"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Come inside! The castle is warm and safe now.",
+        "nl": "Kom binnen! Het kasteel is nu warm en veilig."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "It's risky to stay outside. Let's hurry next time.",
+        "nl": "Het is gevaarlijk om buiten te blijven. Laten we de volgende keer opschieten."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Good! My song makes the thunder less scary.",
+        "nl": "Goed zo! Mijn liedje maakt de donder minder eng."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Oh, the thunder is still loud. Let's try something else.",
+        "nl": "Oh, de donder is nog steeds hard. Laten we iets anders proberen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Yes! Lightning is pretty, not scary like thunder.",
+        "nl": "Ja! Bliksem is mooi, niet eng zoals donder."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_9",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "It's okay to be scared. Let's find a safe place.",
+        "nl": "Het is oké om bang te zijn. Laten we een veilige plek zoeken."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

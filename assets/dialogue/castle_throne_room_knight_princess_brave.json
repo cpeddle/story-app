@@ -1,0 +1,190 @@
+{
+  "treeId": "throneroom_knight_princess_brave_001",
+  "scenarioId": "throneroom_brave_story",
+  "traitId": "BRAVE",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I want to tell you a brave story from the dark forest!",
+        "nl": "Ik wil je een stoer verhaal vertellen uit het donkere bos!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Tell me the scary part!",
+            "nl": "Vertel me het enge stukje!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Tell me a happy part.",
+            "nl": "Vertel me een vrolijk stukje."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Maybe a less scary story?",
+            "nl": "Misschien een minder eng verhaal?"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I saw glowing eyes watching me. They were very close!",
+        "nl": "Ik zag gloeiende oogjes naar me kijken. Ze waren heel dichtbij!"
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "That sounds scary, keep going!",
+            "nl": "Dat klinkt eng, vertel verder!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Stop! That frightens me.",
+            "nl": "Stop! Dat maakt me bang."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I found a beautiful flower that shone like stars.",
+        "nl": "Ik vond een mooie bloem die straalde als sterren."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Wow! Tell me more.",
+            "nl": "Wauw! Vertel nog meer."
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "That sounds nice.",
+            "nl": "Dat klinkt fijn."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Okay, I met a friendly wolf who wagged its tail.",
+        "nl": "Oké, ik ontmoette een vriendelijke wolf die met zijn staart kwispelde."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "I like that story!",
+            "nl": "Dat verhaal vind ik leuk!"
+          },
+          "targetNodeId": "node_8"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "Can you tell a different one?",
+            "nl": "Kun je een ander verhaal vertellen?"
+          },
+          "targetNodeId": "node_9"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Then the eyes disappeared, and I found a hidden treasure!",
+        "nl": "Toen verdwenen de oogjes, en vond ik een verborgen schat!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "Please stop! That story is too scary for me.",
+        "nl": "Stop alsjeblieft! Dat verhaal is te eng voor mij."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "It was magical! The forest felt safe and warm.",
+        "nl": "Het was magisch! Het bos voelde veilig en warm."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "That sounds lovely. I wish I could see it.",
+        "nl": "Dat klinkt heerlijk. Ik wou dat ik het kon zien."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "princess",
+      "characterLine": {
+        "en": "I like hearing stories about kind animals.",
+        "nl": "Ik vind het fijn om verhalen over lieve dieren te horen."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_9",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Next time, I will tell a story about a brave dragon!",
+        "nl": "De volgende keer vertel ik een verhaal over een dappere draak!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    }
+  ]
+}

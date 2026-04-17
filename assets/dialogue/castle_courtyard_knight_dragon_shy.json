@@ -1,0 +1,206 @@
+{
+  "treeId": "courtyard_knight_dragon_shy_001",
+  "scenarioId": "courtyard_shy_friends",
+  "traitId": "SHY",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I want to ask Dragon to be my friend, but I'm shy.",
+        "nl": "Ik wil aan Draak vragen of hij mijn vriend wil zijn, maar ik ben verlegen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Say hello first",
+            "nl": "Zeg eerst hallo"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Give a small gift",
+            "nl": "Geef een klein cadeautje"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Stay quiet and watch",
+            "nl": "Blijf stil en kijk toe"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Hello, Dragon! Would you like to be friends?",
+        "nl": "Hoi, Draak! Wil je mijn vriend zijn?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Wait for Dragon's answer",
+            "nl": "Wacht op Draak zijn antwoord"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Say something funny",
+            "nl": "Zeg iets grappigs"
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I brought you a shiny stone. Will you be my friend?",
+        "nl": "Ik heb een glimmende steen voor je meegebracht. Wil je mijn vriend zijn?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Smile and wait",
+            "nl": "Glimlach en wacht"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Look nervous",
+            "nl": "Kijk een beetje zenuwachtig"
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I will just watch and hope Dragon likes me.",
+        "nl": "Ik blijf gewoon kijken en hoop dat Draak me aardig vindt."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "Keep watching",
+            "nl": "Blijf kijken"
+          },
+          "targetNodeId": "node_8"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "Try to say hello",
+            "nl": "Probeer hallo te zeggen"
+          },
+          "targetNodeId": "node_1"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Yes! I would love to be your friend, Knight.",
+        "nl": "Ja! Ik wil heel graag jouw vriend zijn, Ridder."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Haha! You made me laugh. Friends we will be!",
+        "nl": "Haha! Je hebt me aan het lachen gemaakt. Vrienden worden we zeker!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Thank you for the stone. I like you, friend!",
+        "nl": "Bedankt voor de steen. Ik vind je leuk, vriend!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "You seem scared. It's okay, we can still be friends.",
+        "nl": "Je lijkt bang. Dat is oké, we kunnen toch vrienden zijn."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Why are you just watching? Come say hi, friend!",
+        "nl": "Waarom kijk je alleen maar? Kom eens hallo zeggen, vriend!"
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_8_1",
+          "playerLabel": {
+            "en": "Say hi now",
+            "nl": "Zeg nu hallo"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_8_2",
+          "playerLabel": {
+            "en": "Keep watching",
+            "nl": "Blijf maar kijken"
+          },
+          "targetNodeId": "node_9"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_9",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I feel too shy. Maybe next time.",
+        "nl": "Ik ben te verlegen. Misschien de volgende keer."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

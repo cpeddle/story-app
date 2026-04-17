@@ -1,0 +1,152 @@
+{
+  "treeId": "courtyard_princess_dragon_kind_001",
+  "scenarioId": "courtyard_kind_flowers",
+  "traitId": "KIND",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Look, Dragon! I picked flowers for you.",
+        "nl": "Kijk, Draak! Ik heb bloemen voor jou geplukt."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Thank you, Princess!",
+            "nl": "Dank je, Prinses!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Can I pick some flowers too?",
+            "nl": "Mag ik ook wat bloemen plukken?"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Oh no, I might sneeze soon.",
+            "nl": "Oh nee, ik ga misschien straks niezen."
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "These flowers smell so nice. I love them!",
+        "nl": "Die bloemen ruiken zo lekker. Ik vind ze geweldig!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Let's share more flowers!",
+            "nl": "Laten we meer bloemen delen!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Let's rest and enjoy the garden.",
+            "nl": "Laten we uitrusten en van de tuin genieten."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Yes, Dragon, pick your favorite flowers too!",
+        "nl": "Ja, Draak, pluk ook jouw lievelingsbloemen!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "I pick the blue ones!",
+            "nl": "Ik pluk de blauwe!"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "I pick the red ones!",
+            "nl": "Ik pluk de rode!"
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "Ah... ah... ACHOO! Oh no, the flowers!",
+        "nl": "Ah... ah... HATSJOE! Oh nee, de bloemen!"
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Good idea! Let's make a flower crown together.",
+        "nl": "Goed idee! Laten we samen een bloemenkroon maken."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "The sun feels warm, and I like the butterflies.",
+        "nl": "De zon voelt warm, en ik vind de vlinders leuk."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "These blue flowers are soft and pretty.",
+        "nl": "Deze blauwe bloemen zijn zacht en mooi."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "Oops, I stepped on some flowers by mistake.",
+        "nl": "Oeps, ik ben per ongeluk op wat bloemen gaan staan."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

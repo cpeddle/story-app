@@ -1,0 +1,141 @@
+{
+  "treeId": "courtyard_knight_dragon_brave_001",
+  "scenarioId": "courtyard_brave_tower",
+  "traitId": "BRAVE",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Dragon, can you fly over the tall tower? I believe in you!",
+        "nl": "Draak, kun jij over die hoge toren vliegen? Ik geloof in jou!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Yes, I will try!",
+            "nl": "Ja, ik ga het proberen!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "I'm too scared.",
+            "nl": "Ik ben te bang."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Maybe later, Knight.",
+            "nl": "Misschien later, Ridder."
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Great! Fly fast and show your brave heart!",
+        "nl": "Top! Vlieg snel en laat zien hoe dapper je bent!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Dragon flies over tower.",
+            "nl": "Draak vliegt over de toren."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Dragon stops halfway.",
+            "nl": "Draak stopt halverwege."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "It’s okay to be scared. You are still brave to try!",
+        "nl": "Het is oké om bang te zijn. Je bent toch dapper dat je het probeert!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "I'll try soon.",
+            "nl": "Ik probeer het snel."
+          },
+          "targetNodeId": "node_3"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Maybe another day.",
+            "nl": "Misschien een andere dag."
+          },
+          "targetNodeId": "node_6"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Whenever you’re ready, I will cheer for you!",
+        "nl": "Wanneer je er klaar voor bent, juich ik voor je!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Wow! You flew over the tower! You are very brave!",
+        "nl": "Wauw! Je bent over de toren gevlogen! Wat ben je dapper!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "That’s okay. You tried your best. We can try again!",
+        "nl": "Dat is prima. Je hebt je best gedaan. We kunnen het nog eens proberen!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "It's okay to wait. Brave hearts take time to grow.",
+        "nl": "Het is goed om te wachten. Dappere harten groeien langzaam."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

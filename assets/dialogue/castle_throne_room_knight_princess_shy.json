@@ -1,0 +1,168 @@
+{
+  "treeId": "throneroom_knight_princess_shy_001",
+  "scenarioId": "throneroom_shy_help",
+  "traitId": "SHY",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "That big book is too high. I wish someone could reach it.",
+        "nl": "Dat grote boek ligt te hoog. Ik wou dat iemand erbij kon."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Ask Knight quietly",
+            "nl": "Vraag het stil aan Ridder"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Look for a stool",
+            "nl": "Zoek een krukje"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Try to reach myself",
+            "nl": "Probeer het zelf te pakken"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Um, could you help me get the big book down, please?",
+        "nl": "Eh, zou je me kunnen helpen dat grote boek te pakken, alsjeblieft?"
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Sure, I'll reach it.",
+            "nl": "Natuurlijk, ik pak het wel."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Sorry, I must go now.",
+            "nl": "Sorry, ik moet nu weg."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "I found a stool! Maybe I can reach the book now.",
+        "nl": "Ik heb een krukje gevonden! Misschien kan ik het boek nu pakken."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Climb carefully",
+            "nl": "Klim voorzichtig"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Ask Knight after all",
+            "nl": "Vraag toch maar aan Ridder"
+          },
+          "targetNodeId": "node_1"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "I'll stretch my arms and try to grab the book.",
+        "nl": "Ik steek mijn armen uit en probeer het boek te pakken."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "Reach carefully",
+            "nl": "Pak het voorzichtig"
+          },
+          "targetNodeId": "node_7"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "Ask Knight instead",
+            "nl": "Vraag toch maar aan Ridder"
+          },
+          "targetNodeId": "node_1"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "Here you go, Princess. That was a heavy book!",
+        "nl": "Hier, Prinses. Dat was een zwaar boek!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "I have to leave quickly. Sorry, Princess.",
+        "nl": "Ik moet snel weg. Sorry, Prinses."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "I got the book! Thanks for cheering me on.",
+        "nl": "Ik heb het boek! Bedankt dat je me aanmoedigde."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Oops! I lost balance and dropped the book.",
+        "nl": "Oeps! Ik verloor mijn evenwicht en liet het boek vallen."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

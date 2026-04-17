@@ -1,0 +1,598 @@
+{
+  "total_trees": 18,
+  "generated_ok": 14,
+  "gate_failures": 4,
+  "total_cost_usd": 0.0877,
+  "results": [
+    {
+      "treeId": "throneroom_knight_princess_brave_001",
+      "status": "failed",
+      "gates": {
+        "1_schema": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph": {
+          "pass": true,
+          "detail": "ok (9 nodes)"
+        },
+        "3_branches": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": false,
+          "detail": "max depth 4 > 3"
+        },
+        "5_outcomes": {
+          "pass": true,
+          "detail": "ok ['MOOD_NEGATIVE', 'MOOD_POSITIVE', 'NEUTRAL']"
+        },
+        "6_tone": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocab": {
+          "pass": true,
+          "detail": "ok (FK ≈1.7)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (20 strings)"
+        },
+        "overall": false
+      },
+      "gen_meta": {
+        "ms": 14435,
+        "in": 584,
+        "out": 1147,
+        "cost": 0.0020688,
+        "err": null
+      }
+    },
+    {
+      "treeId": "throneroom_knight_princess_kind_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 8063,
+        "in": 568,
+        "out": 714,
+        "cost": 0.0013696000000000001,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 7307,
+        "in": 706,
+        "out": 754,
+        "cost": 0.0014888000000000002,
+        "err": null
+      },
+      "file": "castle_throne_room_knight_princess_kind.json"
+    },
+    {
+      "treeId": "throneroom_knight_princess_shy_001",
+      "status": "failed",
+      "gates": {
+        "1_schema": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph": {
+          "pass": true,
+          "detail": "ok (9 nodes)"
+        },
+        "3_branches": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (depth 2)"
+        },
+        "5_outcomes": {
+          "pass": true,
+          "detail": "ok ['MOOD_NEGATIVE', 'MOOD_POSITIVE', 'NEUTRAL']"
+        },
+        "6_tone": {
+          "pass": false,
+          "detail": "bad tones: [\"node_1:'SHY'\"]"
+        },
+        "7_vocab": {
+          "pass": true,
+          "detail": "ok (FK ≈0.9)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (20 strings)"
+        },
+        "overall": false
+      },
+      "gen_meta": {
+        "ms": 13169,
+        "in": 582,
+        "out": 1091,
+        "cost": 0.0019784,
+        "err": null
+      }
+    },
+    {
+      "treeId": "throneroom_princess_dragon_curious_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 14793,
+        "in": 569,
+        "out": 1097,
+        "cost": 0.0019828000000000003,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 14848,
+        "in": 1008,
+        "out": 1158,
+        "cost": 0.002256,
+        "err": null
+      },
+      "file": "castle_throne_room_princess_dragon_curious.json"
+    },
+    {
+      "treeId": "throneroom_princess_dragon_silly_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 16471,
+        "in": 573,
+        "out": 1210,
+        "cost": 0.0021652,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 16849,
+        "in": 1162,
+        "out": 1334,
+        "cost": 0.0025992,
+        "err": null
+      },
+      "file": "castle_throne_room_princess_dragon_silly.json"
+    },
+    {
+      "treeId": "throneroom_princess_dragon_grumpy_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 14767,
+        "in": 571,
+        "out": 1078,
+        "cost": 0.0019532,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 13008,
+        "in": 989,
+        "out": 1138,
+        "cost": 0.0022164000000000003,
+        "err": null
+      },
+      "file": "castle_throne_room_princess_dragon_grumpy.json"
+    },
+    {
+      "treeId": "throneroom_knight_dragon_brave_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 8054,
+        "in": 573,
+        "out": 787,
+        "cost": 0.0014884000000000004,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 11728,
+        "in": 803,
+        "out": 870,
+        "cost": 0.0017132,
+        "err": null
+      },
+      "file": "castle_throne_room_knight_dragon_brave.json"
+    },
+    {
+      "treeId": "throneroom_knight_dragon_kind_001",
+      "status": "failed",
+      "gates": {
+        "1_schema": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph": {
+          "pass": true,
+          "detail": "ok (6 nodes)"
+        },
+        "3_branches": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (depth 2)"
+        },
+        "5_outcomes": {
+          "pass": false,
+          "detail": "no MOOD_NEGATIVE leaf"
+        },
+        "6_tone": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocab": {
+          "pass": true,
+          "detail": "ok (FK ≈-0.2)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (11 strings)"
+        },
+        "overall": false
+      },
+      "gen_meta": {
+        "ms": 7953,
+        "in": 567,
+        "out": 696,
+        "cost": 0.0013404,
+        "err": null
+      }
+    },
+    {
+      "treeId": "throneroom_knight_dragon_curious_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 13583,
+        "in": 567,
+        "out": 1307,
+        "cost": 0.002318,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 19159,
+        "in": 1228,
+        "out": 1425,
+        "cost": 0.0027712000000000006,
+        "err": null
+      },
+      "file": "castle_throne_room_knight_dragon_curious.json"
+    },
+    {
+      "treeId": "courtyard_knight_princess_kind_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 14115,
+        "in": 566,
+        "out": 1073,
+        "cost": 0.0019432000000000002,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 14739,
+        "in": 1045,
+        "out": 1201,
+        "cost": 0.0023396,
+        "err": null
+      },
+      "file": "castle_courtyard_knight_princess_kind.json"
+    },
+    {
+      "treeId": "courtyard_knight_princess_curious_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 11919,
+        "in": 562,
+        "out": 1052,
+        "cost": 0.0019080000000000002,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 22937,
+        "in": 1024,
+        "out": 1158,
+        "cost": 0.0022624,
+        "err": null
+      },
+      "file": "castle_courtyard_knight_princess_curious.json"
+    },
+    {
+      "treeId": "courtyard_knight_princess_silly_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 13541,
+        "in": 564,
+        "out": 981,
+        "cost": 0.0017952000000000003,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 16080,
+        "in": 964,
+        "out": 1067,
+        "cost": 0.0020928,
+        "err": null
+      },
+      "file": "castle_courtyard_knight_princess_silly.json"
+    },
+    {
+      "treeId": "courtyard_princess_dragon_brave_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 11935,
+        "in": 560,
+        "out": 1072,
+        "cost": 0.0019392,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 13822,
+        "in": 1044,
+        "out": 1195,
+        "cost": 0.0023296000000000002,
+        "err": null
+      },
+      "file": "castle_courtyard_princess_dragon_brave.json"
+    },
+    {
+      "treeId": "courtyard_princess_dragon_kind_001",
+      "status": "failed",
+      "gates": {
+        "1_schema": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph": {
+          "pass": true,
+          "detail": "ok (9 nodes)"
+        },
+        "3_branches": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (depth 2)"
+        },
+        "5_outcomes": {
+          "pass": false,
+          "detail": "no MOOD_NEGATIVE leaf"
+        },
+        "6_tone": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocab": {
+          "pass": true,
+          "detail": "ok (FK ≈1.3)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (20 strings)"
+        },
+        "overall": false
+      },
+      "gen_meta": {
+        "ms": 11878,
+        "in": 563,
+        "out": 1064,
+        "cost": 0.0019276000000000002,
+        "err": null
+      }
+    },
+    {
+      "treeId": "courtyard_princess_dragon_shy_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 10459,
+        "in": 567,
+        "out": 718,
+        "cost": 0.0013756,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 9049,
+        "in": 743,
+        "out": 779,
+        "cost": 0.0015436,
+        "err": null
+      },
+      "file": "castle_courtyard_princess_dragon_shy.json"
+    },
+    {
+      "treeId": "courtyard_knight_dragon_grumpy_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 12049,
+        "in": 568,
+        "out": 1074,
+        "cost": 0.0019456000000000002,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 14650,
+        "in": 1021,
+        "out": 1170,
+        "cost": 0.0022804,
+        "err": null
+      },
+      "file": "castle_courtyard_knight_dragon_grumpy.json"
+    },
+    {
+      "treeId": "courtyard_knight_dragon_brave_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 10079,
+        "in": 565,
+        "out": 802,
+        "cost": 0.0015092,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 10534,
+        "in": 816,
+        "out": 900,
+        "cost": 0.0017664,
+        "err": null
+      },
+      "file": "castle_courtyard_knight_dragon_brave.json"
+    },
+    {
+      "treeId": "courtyard_knight_dragon_shy_001",
+      "status": "ok",
+      "gates": {
+        "1_schema": true,
+        "2_graph": true,
+        "3_branches": true,
+        "4_depth": true,
+        "5_outcomes": true,
+        "6_tone": true,
+        "7_vocab": true,
+        "8_content": true
+      },
+      "gen_meta": {
+        "ms": 14405,
+        "in": 565,
+        "out": 1219,
+        "cost": 0.0021764,
+        "err": null
+      },
+      "nl_meta": {
+        "ms": 16125,
+        "in": 1085,
+        "out": 1253,
+        "cost": 0.0024388,
+        "err": null
+      },
+      "file": "castle_courtyard_knight_dragon_shy.json"
+    }
+  ]
+}

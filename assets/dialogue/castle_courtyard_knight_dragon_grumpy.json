@@ -1,0 +1,179 @@
+{
+  "treeId": "courtyard_knight_dragon_grumpy_001",
+  "scenarioId": "courtyard_grumpy_apples",
+  "traitId": "GRUMPY",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Oh no! The apple tree is empty. Did you eat all the apples?",
+        "nl": "Oh nee! De appelboom is leeg. Heb jij alle appels opgegeten?"
+      },
+      "tone": "GRUMPY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Yes, I was very hungry.",
+            "nl": "Ja, ik had heel veel honger."
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "No, I didn’t eat them.",
+            "nl": "Nee, ik heb ze niet opgegeten."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Why did you eat them all?",
+            "nl": "Waarom heb je ze allemaal opgegeten?"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Eating all the apples made you grumpy. That’s not good.",
+        "nl": "Alle appels eten maakt je chagrijnig. Dat is niet goed."
+      },
+      "tone": "GRUMPY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "I’m sorry. I’ll be careful.",
+            "nl": "Sorry, ik zal beter opletten."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "I’m still hungry though.",
+            "nl": "Maar ik heb nog steeds honger."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Hmm, then who ate the apples? The tree is empty now.",
+        "nl": "Hmm, wie heeft dan de appels opgegeten? De boom is nu leeg."
+      },
+      "tone": "GRUMPY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Maybe a sneaky squirrel.",
+            "nl": "Misschien een stiekeme eekhoorn."
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "I’ll help find the apples.",
+            "nl": "Ik help wel zoeken naar de appels."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Eating too many apples can make you grumpy and sick.",
+        "nl": "Te veel appels eten kan je chagrijnig en ziek maken."
+      },
+      "tone": "GRUMPY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "I didn’t know that!",
+            "nl": "Dat wist ik niet!"
+          },
+          "targetNodeId": "node_8"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "I’ll try to eat less.",
+            "nl": "Ik zal proberen minder te eten."
+          },
+          "targetNodeId": "node_4"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "That’s good! Sharing apples will make us both happy.",
+        "nl": "Dat is goed! Appels delen maakt ons allebei blij."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Let’s find some berries. They’re tasty and healthy too.",
+        "nl": "Laten we wat bessen zoeken. Die zijn ook lekker en gezond."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Sneaky squirrels love apples, but they don’t eat them all.",
+        "nl": "Stiekeme eekhoorns zijn dol op appels, maar ze eten ze niet allemaal."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Thank you! Let’s look together and find some apples.",
+        "nl": "Dank je! Laten we samen zoeken naar appels."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Yes, eating too much can make you feel bad and grumpy.",
+        "nl": "Ja, te veel eten kan je slecht en chagrijnig laten voelen."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

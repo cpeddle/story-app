@@ -1,0 +1,114 @@
+{
+  "treeId": "throneroom_knight_princess_kind_001",
+  "scenarioId": "throneroom_kind_sharing",
+  "traitId": "KIND",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Princess, you look hungry. Would you like some of my snack?",
+        "nl": "Prinses, je ziet er hongerig uit. Wil je wat van mijn tussendoortje?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Yes, please! Thank you.",
+            "nl": "Ja, graag! Dank je wel."
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "No, thank you. I’m not hungry.",
+            "nl": "Nee, dank je. Ik heb geen honger."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "What kind of snack do you have?",
+            "nl": "Wat voor tussendoortje heb je?"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Here you go! Sharing makes us happy.",
+        "nl": "Hier, alsjeblieft! Samen delen maakt blij."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Okay, Princess. Let me know if you change your mind.",
+        "nl": "Oké, prinses. Laat het maar weten als je van gedachten verandert."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I have sweet berries and crunchy nuts. Want to try some?",
+        "nl": "Ik heb zoete bessen en knapperige nootjes. Wil je wat proeven?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "Yes, they sound yummy!",
+            "nl": "Ja, dat klinkt lekker!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "No thanks, I don’t like nuts.",
+            "nl": "Nee bedankt, ik houd niet van nootjes."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Great! Sharing snacks is fun together.",
+        "nl": "Super! Samen snacks delen is leuk."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "No worries. I hope you feel better soon.",
+        "nl": "Geen probleem. Ik hoop dat je je snel beter voelt."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "treeId": "courtyard_knight_princess_curious_001",
+  "scenarioId": "courtyard_curious_morning",
+  "traitId": "CURIOUS",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Good morning, Knight! Where do you go with your horse?",
+        "nl": "Goedemorgen, Ridder! Waar ga jij naartoe met je paard?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "To the forest!",
+            "nl": "Naar het bos!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "To the village!",
+            "nl": "Naar het dorp!"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "To the castle gates!",
+            "nl": "Naar de kasteelpoort!"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "I go to the forest to check on the animals.",
+        "nl": "Ik ga naar het bos om te kijken hoe het met de dieren gaat."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Can I come too?",
+            "nl": "Mag ik ook mee?"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "That sounds dangerous.",
+            "nl": "Dat klinkt gevaarlijk."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "I visit the village to bring news to the people.",
+        "nl": "Ik ga naar het dorp om nieuws te brengen aan de mensen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Tell me a story!",
+            "nl": "Vertel me een verhaal!"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Sounds boring.",
+            "nl": "Dat klinkt saai."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "I guard the castle gates to keep us safe.",
+        "nl": "Ik bewaak de kasteelpoort om ons te beschermen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "I want to help guard!",
+            "nl": "Ik wil meehelpen met bewaken!"
+          },
+          "targetNodeId": "node_8"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "That sounds tiring.",
+            "nl": "Dat klinkt vermoeiend."
+          },
+          "targetNodeId": "node_9"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "Yes! The forest is fun and full of surprises.",
+        "nl": "Ja! Het bos is leuk en zit vol verrassingen."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "It can be, but I am careful and brave.",
+        "nl": "Dat kan, maar ik ben voorzichtig en dapper."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "Once, a dragon helped the village in danger!",
+        "nl": "Eens hielp een draak het dorp toen het in gevaar was!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "Maybe, but helping the village is very important.",
+        "nl": "Misschien, maar het helpen van het dorp is heel belangrijk."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "Great! We can watch together and protect the kingdom.",
+        "nl": "Geweldig! Dan kunnen we samen opletten en het koninkrijk beschermen."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_9",
+      "speaker": "Knight",
+      "characterLine": {
+        "en": "It is tiring, but keeping us safe is important.",
+        "nl": "Het is vermoeiend, maar ons veilig houden is belangrijk."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

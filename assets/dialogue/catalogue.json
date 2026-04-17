@@ -1,0 +1,168 @@
+{
+  "generated": "2026-04-17T22:22:29Z",
+  "model": "gpt-4.1-mini",
+  "trees": [
+    {
+      "treeId": "throneroom_knight_princess_kind_001",
+      "file": "castle_throne_room_knight_princess_kind.json",
+      "scene": "castle_throne_room",
+      "pair": "knight_princess",
+      "traitId": "KIND",
+      "scenarioId": "throneroom_kind_sharing",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_princess_dragon_curious_001",
+      "file": "castle_throne_room_princess_dragon_curious.json",
+      "scene": "castle_throne_room",
+      "pair": "princess_dragon",
+      "traitId": "CURIOUS",
+      "scenarioId": "throneroom_curious_fire",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_princess_dragon_silly_001",
+      "file": "castle_throne_room_princess_dragon_silly.json",
+      "scene": "castle_throne_room",
+      "pair": "princess_dragon",
+      "traitId": "SILLY",
+      "scenarioId": "throneroom_silly_laugh",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_princess_dragon_grumpy_001",
+      "file": "castle_throne_room_princess_dragon_grumpy.json",
+      "scene": "castle_throne_room",
+      "pair": "princess_dragon",
+      "traitId": "GRUMPY",
+      "scenarioId": "throneroom_grumpy_woken",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_knight_dragon_brave_001",
+      "file": "castle_throne_room_knight_dragon_brave.json",
+      "scene": "castle_throne_room",
+      "pair": "knight_dragon",
+      "traitId": "BRAVE",
+      "scenarioId": "throneroom_brave_challenge",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_knight_dragon_curious_001",
+      "file": "castle_throne_room_knight_dragon_curious.json",
+      "scene": "castle_throne_room",
+      "pair": "knight_dragon",
+      "traitId": "CURIOUS",
+      "scenarioId": "throneroom_curious_helmet",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_knight_princess_kind_001",
+      "file": "castle_courtyard_knight_princess_kind.json",
+      "scene": "castle_courtyard",
+      "pair": "knight_princess",
+      "traitId": "KIND",
+      "scenarioId": "courtyard_kind_flowers",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_knight_princess_curious_001",
+      "file": "castle_courtyard_knight_princess_curious.json",
+      "scene": "castle_courtyard",
+      "pair": "knight_princess",
+      "traitId": "CURIOUS",
+      "scenarioId": "courtyard_curious_morning",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_knight_princess_silly_001",
+      "file": "castle_courtyard_knight_princess_silly.json",
+      "scene": "castle_courtyard",
+      "pair": "knight_princess",
+      "traitId": "SILLY",
+      "scenarioId": "courtyard_silly_swords",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_princess_dragon_brave_001",
+      "file": "castle_courtyard_princess_dragon_brave.json",
+      "scene": "castle_courtyard",
+      "pair": "princess_dragon",
+      "traitId": "BRAVE",
+      "scenarioId": "courtyard_brave_storm",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_princess_dragon_shy_001",
+      "file": "castle_courtyard_princess_dragon_shy.json",
+      "scene": "castle_courtyard",
+      "pair": "princess_dragon",
+      "traitId": "SHY",
+      "scenarioId": "courtyard_shy_join",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_knight_dragon_grumpy_001",
+      "file": "castle_courtyard_knight_dragon_grumpy.json",
+      "scene": "castle_courtyard",
+      "pair": "knight_dragon",
+      "traitId": "GRUMPY",
+      "scenarioId": "courtyard_grumpy_apples",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_knight_dragon_brave_001",
+      "file": "castle_courtyard_knight_dragon_brave.json",
+      "scene": "castle_courtyard",
+      "pair": "knight_dragon",
+      "traitId": "BRAVE",
+      "scenarioId": "courtyard_brave_tower",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_knight_dragon_shy_001",
+      "file": "castle_courtyard_knight_dragon_shy.json",
+      "scene": "castle_courtyard",
+      "pair": "knight_dragon",
+      "traitId": "SHY",
+      "scenarioId": "courtyard_shy_friends",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_knight_princess_brave_001",
+      "file": "castle_throne_room_knight_princess_brave.json",
+      "scene": "castle_throne_room",
+      "pair": "knight_princess",
+      "traitId": "BRAVE",
+      "scenarioId": "throneroom_brave_story",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_knight_princess_shy_001",
+      "file": "castle_throne_room_knight_princess_shy.json",
+      "scene": "castle_throne_room",
+      "pair": "knight_princess",
+      "traitId": "SHY",
+      "scenarioId": "throneroom_shy_help",
+      "hasNl": true
+    },
+    {
+      "treeId": "throneroom_knight_dragon_kind_001",
+      "file": "castle_throne_room_knight_dragon_kind.json",
+      "scene": "castle_throne_room",
+      "pair": "knight_dragon",
+      "traitId": "KIND",
+      "scenarioId": "throneroom_kind_snack",
+      "hasNl": true
+    },
+    {
+      "treeId": "courtyard_princess_dragon_kind_001",
+      "file": "castle_courtyard_princess_dragon_kind.json",
+      "scene": "castle_courtyard",
+      "pair": "princess_dragon",
+      "traitId": "KIND",
+      "scenarioId": "courtyard_kind_flowers",
+      "hasNl": true
+    }
+  ]
+}

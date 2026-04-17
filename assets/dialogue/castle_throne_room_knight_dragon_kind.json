@@ -1,0 +1,152 @@
+{
+  "treeId": "throneroom_knight_dragon_kind_001",
+  "scenarioId": "throneroom_kind_snack",
+  "traitId": "KIND",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I brought you a big bowl of shiny red apples!",
+        "nl": "Ik heb een grote schaal met glanzende rode appeltjes voor je meegebracht!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Thank you, Dragon! Want some apples?",
+            "nl": "Dank je, Draak! Wil je wat appeltjes?"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Do you like apples, Dragon?",
+            "nl": "Vind je appeltjes lekker, Draak?"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "I hope you enjoy this sweet treat.",
+            "nl": "Ik hoop dat je dit lekkere snoepje lekker vindt."
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Oh, I love apples! Let's share them together.",
+        "nl": "Oh, ik hou van appeltjes! Laten we ze samen delen."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Let's eat some now!",
+            "nl": "Laten we er nu wat eten!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "We can save some for later.",
+            "nl": "We kunnen er ook wat bewaren voor later."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "I already have too many apples and feel full.",
+        "nl": "Ik heb al te veel appeltjes en zit vol."
+      },
+      "tone": "GRUMPY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Maybe you want some later?",
+            "nl": "Wil je er misschien later wat?"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Okay, I will keep them for now.",
+            "nl": "Oké, dan bewaar ik ze nog even."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Thank you for your kindness! I am happy.",
+        "nl": "Dankjewel voor je vriendelijkheid! Ik ben blij."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Yummy! Sharing makes the apples taste even better.",
+        "nl": "Mmm! Samen delen maakt de appeltjes nóg lekkerder."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "Good idea! We can enjoy them later together.",
+        "nl": "Goed idee! Dan kunnen we er later samen van genieten."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "No, thank you! I just want to be left alone.",
+        "nl": "Nee, dank je! Ik wil gewoon even alleen zijn."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "knight",
+      "characterLine": {
+        "en": "I understand. I hope you feel better soon, friend.",
+        "nl": "Ik snap het. Ik hoop dat je je snel beter voelt, vriend."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    }
+  ]
+}

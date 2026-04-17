@@ -164,3 +164,12 @@ Parts were generated as isolated hero images filling most of the canvas, with no
 **Outcome:** ✅ DONE — 3 text description files ready for RS-5 template generation pipeline.
 
 
+
+## O-8 Bulk Corpus — 2026-04-17
+
+- **Model:** gpt-4.1-mini  
+- **Trees generated:** 14/18  
+- **Gate failures:** 4  
+- **Total tokens:** 23872in / 33584out  
+- **Total cost:** $0.0877 USD  
+- **Output path:** `assets/dialogue/`  

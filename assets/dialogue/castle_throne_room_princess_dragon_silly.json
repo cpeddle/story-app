@@ -1,0 +1,217 @@
+{
+  "treeId": "throneroom_princess_dragon_silly_001",
+  "scenarioId": "throneroom_silly_laugh",
+  "traitId": "SILLY",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Look, Princess! I can make my nose wiggle like a worm!",
+        "nl": "Kijk, Prinses! Ik kan mijn neus laten wiebelen als een worm!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Please stop, I must read.",
+            "nl": "Stop alsjeblieft, ik moet lezen."
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Show me another funny face!",
+            "nl": "Laat me nog een gek gezicht zien!"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Can you help me instead?",
+            "nl": "Kun je me liever helpen?"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Oh! Sorry, I just wanted to make you smile.",
+        "nl": "Oh! Sorry, ik wilde je gewoon laten lachen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "It's okay, just not now.",
+            "nl": "Het is goed, maar nu even niet."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Maybe later, please.",
+            "nl": "Misschien later, alsjeblieft."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Watch this! My tongue can touch my tail!",
+        "nl": "Kijk hier! Mijn tong kan mijn staart aanraken!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Haha! That’s silly!",
+            "nl": "Haha! Wat gek!"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "I need quiet now.",
+            "nl": "Ik heb nu stilte nodig."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "I can help! What does the letter say?",
+        "nl": "Ik kan helpen! Wat staat er in de brief?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "It's about the castle feast.",
+            "nl": "Het gaat over het kasteelfeest."
+          },
+          "targetNodeId": "node_8"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "It is very important.",
+            "nl": "Het is heel belangrijk."
+          },
+          "targetNodeId": "node_9"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "I will be quiet now. No more faces.",
+        "nl": "Ik ben nu stil. Geen gekke bekken meer."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Okay! I’ll save my silly for later.",
+        "nl": "Oké! Ik bewaar mijn gekke doen voor later."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Glad you like it! Want to see more?",
+        "nl": "Fijn dat je het leuk vindt! Wil je meer zien?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_6_1",
+          "playerLabel": {
+            "en": "Yes, please!",
+            "nl": "Ja, graag!"
+          },
+          "targetNodeId": "node_10"
+        },
+        {
+          "branchId": "br_6_2",
+          "playerLabel": {
+            "en": "No, time to read.",
+            "nl": "Nee, tijd om te lezen."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Oh no! I didn’t mean to be rude.",
+        "nl": "Oh nee! Ik wilde niet onbeleefd zijn."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "A feast! I love feasts! I’ll help cook!",
+        "nl": "Een feestmaal! Ik hou van feestmaaltijden! Ik help mee koken!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_9",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "I understand. I won’t distract you anymore.",
+        "nl": "Ik snap het. Ik zal je niet meer afleiden."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_10",
+      "speaker": "dragon",
+      "characterLine": {
+        "en": "Here comes my silly dance!",
+        "nl": "Hier komt mijn gekke dans!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "treeId": "throneroom_princess_dragon_curious_001",
+  "scenarioId": "throneroom_curious_fire",
+  "traitId": "CURIOUS",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "Princess",
+      "characterLine": {
+        "en": "Hello, Dragon! How do you make fire like that?",
+        "nl": "Hallo, Draak! Hoe maak jij zo'n vuur?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Tell me your secret!",
+            "nl": "Vertel me je geheim!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Can you teach me fire magic?",
+            "nl": "Kun je me vuurmagie leren?"
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Is fire scary or fun?",
+            "nl": "Is vuur eng of leuk?"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "It’s a special breath! I practice a lot to control it.",
+        "nl": "Het is een speciale adem! Ik oefen veel om het te beheersen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Can I try it someday?",
+            "nl": "Mag ik het ooit eens proberen?"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Wow, you must be brave!",
+            "nl": "Wauw, jij bent echt dapper!"
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "I can teach you, but fire needs great care and respect.",
+        "nl": "Ik kan het je leren, maar vuur vraagt veel zorg en respect."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "I’m ready! Show me!",
+            "nl": "Ik ben er klaar voor! Laat maar zien!"
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Maybe fire is too strong for me.",
+            "nl": "Misschien is vuur te sterk voor mij."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "Fire is both! It can warm or burn if you’re careless.",
+        "nl": "Vuur is allebei! Het kan warm maken of branden als je niet oplet."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "I want to learn to be careful.",
+            "nl": "Ik wil leren om voorzichtig te zijn."
+          },
+          "targetNodeId": "node_6"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "I think fire is too scary.",
+            "nl": "Ik vind vuur eigenlijk best eng."
+          },
+          "targetNodeId": "node_8"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "You must be patient and brave. Then maybe one day!",
+        "nl": "Je moet geduldig en dapper zijn. Misschien lukt het ooit!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "Thank you! Being brave helps me keep the fire safe.",
+        "nl": "Dank je! Dapper zijn helpt me het vuur veilig te houden."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "Great! Let’s start with small sparks you can control.",
+        "nl": "Top! Laten we beginnen met kleine vonkjes die jij kunt beheersen."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "It’s okay to be careful. Fire is not for everyone.",
+        "nl": "Het is goed om voorzichtig te zijn. Vuur is niet voor iedereen."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "Dragon",
+      "characterLine": {
+        "en": "I understand. Fire can be scary if not used wisely.",
+        "nl": "Ik snap het. Vuur kan eng zijn als je er niet slim mee omgaat."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}
