@@ -1,0 +1,19 @@
+# Minimal smoke-test config — 1 model × 1 input × 1 prompt × 1 run
+spike: rs5
+schema: schema/scene-template.schema.json
+ground_truth_dir: ground-truth/
+
+inputs:
+  - id: text-outdoor-carriage
+    type: text
+    path: text-descriptions/outdoor-carriage.txt
+
+models:
+  - { name: claude-sonnet-4-20250514, provider: anthropic }
+
+prompts:
+  - { template: prompts/text_input.txt, variation: zero-shot }
+
+output_formats: [json]
+runs_per_trial: 1
+inter_trial_delay_s: 0

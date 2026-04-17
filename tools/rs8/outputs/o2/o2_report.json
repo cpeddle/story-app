@@ -1,0 +1,253 @@
+{
+  "recommendation_model_for_o8": "gpt-4.1-mini",
+  "model_pass_counts": {
+    "gpt-4.1": 2,
+    "gpt-4.1-mini": 2
+  },
+  "model_total_counts": {
+    "gpt-4.1": 2,
+    "gpt-4.1-mini": 2
+  },
+  "model_total_cost": {
+    "gpt-4.1": 0.018076,
+    "gpt-4.1-mini": 0.003844
+  },
+  "results": [
+    {
+      "model": "gpt-4.1",
+      "scenario": "tree_1_sharing_the_crown",
+      "meta": {
+        "model": "gpt-4.1",
+        "scenario": "tree_1_sharing_the_crown",
+        "latency_ms": 10519,
+        "in_tokens": 689,
+        "out_tokens": 1177,
+        "cost_usd": 0.010794,
+        "parse_error": null
+      },
+      "gates": {
+        "1_schema_valid": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph_integrity": {
+          "pass": true,
+          "detail": "ok (10 nodes, all reachable)"
+        },
+        "3_branch_count": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (max depth 2, min leaf depth 2)"
+        },
+        "5_leaf_outcomes": {
+          "pass": true,
+          "detail": "ok (outcomes: ['MOOD_NEGATIVE', 'MOOD_POSITIVE', 'NEUTRAL'])"
+        },
+        "6_tone_enum": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocabulary": {
+          "pass": true,
+          "detail": "ok (FK grade ≈1.38)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (19 strings checked)"
+        },
+        "overall_pass": true
+      },
+      "soft": {
+        "node_count": 10,
+        "leaf_count": 6,
+        "outcome_balance": 0.5,
+        "outcomes": {
+          "MOOD_POSITIVE": 4,
+          "MOOD_NEGATIVE": 1,
+          "NEUTRAL": 1
+        },
+        "avg_words_per_node": 12.2
+      }
+    },
+    {
+      "model": "gpt-4.1",
+      "scenario": "tree_2_helping_in_kitchen",
+      "meta": {
+        "model": "gpt-4.1",
+        "scenario": "tree_2_helping_in_kitchen",
+        "latency_ms": 6266,
+        "in_tokens": 681,
+        "out_tokens": 740,
+        "cost_usd": 0.007282,
+        "parse_error": null
+      },
+      "gates": {
+        "1_schema_valid": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph_integrity": {
+          "pass": true,
+          "detail": "ok (6 nodes, all reachable)"
+        },
+        "3_branch_count": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (max depth 2, min leaf depth 1)"
+        },
+        "5_leaf_outcomes": {
+          "pass": true,
+          "detail": "ok (outcomes: ['MOOD_NEGATIVE', 'MOOD_POSITIVE'])"
+        },
+        "6_tone_enum": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocabulary": {
+          "pass": true,
+          "detail": "ok (FK grade ≈0.7)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (11 strings checked)"
+        },
+        "overall_pass": true
+      },
+      "soft": {
+        "node_count": 6,
+        "leaf_count": 4,
+        "outcome_balance": 0.5,
+        "outcomes": {
+          "MOOD_POSITIVE": 3,
+          "MOOD_NEGATIVE": 1,
+          "NEUTRAL": 0
+        },
+        "avg_words_per_node": 14.0
+      }
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "scenario": "tree_1_sharing_the_crown",
+      "meta": {
+        "model": "gpt-4.1-mini",
+        "scenario": "tree_1_sharing_the_crown",
+        "latency_ms": 16472,
+        "in_tokens": 689,
+        "out_tokens": 1087,
+        "cost_usd": 0.002015,
+        "parse_error": null
+      },
+      "gates": {
+        "1_schema_valid": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph_integrity": {
+          "pass": true,
+          "detail": "ok (9 nodes, all reachable)"
+        },
+        "3_branch_count": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (max depth 2, min leaf depth 2)"
+        },
+        "5_leaf_outcomes": {
+          "pass": true,
+          "detail": "ok (outcomes: ['MOOD_NEGATIVE', 'MOOD_POSITIVE', 'NEUTRAL'])"
+        },
+        "6_tone_enum": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocabulary": {
+          "pass": true,
+          "detail": "ok (FK grade ≈0.75)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (18 strings checked)"
+        },
+        "overall_pass": true
+      },
+      "soft": {
+        "node_count": 9,
+        "leaf_count": 5,
+        "outcome_balance": 0.8,
+        "outcomes": {
+          "MOOD_POSITIVE": 2,
+          "MOOD_NEGATIVE": 1,
+          "NEUTRAL": 2
+        },
+        "avg_words_per_node": 10.6
+      }
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "scenario": "tree_2_helping_in_kitchen",
+      "meta": {
+        "model": "gpt-4.1-mini",
+        "scenario": "tree_2_helping_in_kitchen",
+        "latency_ms": 12226,
+        "in_tokens": 681,
+        "out_tokens": 973,
+        "cost_usd": 0.001829,
+        "parse_error": null
+      },
+      "gates": {
+        "1_schema_valid": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "2_graph_integrity": {
+          "pass": true,
+          "detail": "ok (8 nodes, all reachable)"
+        },
+        "3_branch_count": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "4_depth": {
+          "pass": true,
+          "detail": "ok (max depth 2, min leaf depth 1)"
+        },
+        "5_leaf_outcomes": {
+          "pass": true,
+          "detail": "ok (outcomes: ['MOOD_NEGATIVE', 'MOOD_POSITIVE', 'NEUTRAL'])"
+        },
+        "6_tone_enum": {
+          "pass": true,
+          "detail": "ok"
+        },
+        "7_vocabulary": {
+          "pass": true,
+          "detail": "ok (FK grade ≈1.21)"
+        },
+        "8_content": {
+          "pass": true,
+          "detail": "ok (16 strings checked)"
+        },
+        "overall_pass": true
+      },
+      "soft": {
+        "node_count": 8,
+        "leaf_count": 5,
+        "outcome_balance": 0.6,
+        "outcomes": {
+          "MOOD_POSITIVE": 3,
+          "MOOD_NEGATIVE": 1,
+          "NEUTRAL": 1
+        },
+        "avg_words_per_node": 9.8
+      }
+    }
+  ]
+}

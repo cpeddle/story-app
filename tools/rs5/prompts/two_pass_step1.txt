@@ -1,0 +1,3 @@
+Describe the spatial layout of this scene. Identify: walls, doors/exits, walkable floor areas,
+surfaces where objects could sit, and whether it is indoor or outdoor. Be specific about
+approximate positions (left/right/center, high/low).

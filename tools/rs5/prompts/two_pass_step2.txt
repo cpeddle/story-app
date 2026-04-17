@@ -1,0 +1,5 @@
+Based on your description below, produce a scene template in JSON format matching this schema:
+{schema}
+
+Your description:
+{step1_output}

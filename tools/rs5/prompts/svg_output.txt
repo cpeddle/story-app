@@ -1,0 +1,13 @@
+Output the scene template as an SVG document with the following structure:
+- A root <svg> element with viewBox="0 0 1920 1080".
+- A <g id="background"> group containing a placeholder rectangle.
+- A <g id="doors"> group containing one <rect> per door, with attributes:
+  id="door-{{name}}", data-target-scene="{{sceneId}}", data-target-door="{{doorId}}",
+  data-spawn-x="{{x}}", data-spawn-y="{{y}}".
+- A <g id="spawn-points"> group containing one <circle> per spawn point, with attributes:
+  id="spawn-{{name}}", data-purpose="{{initial|general|chaos-button}}".
+- A <g id="object-zones"> group containing one <rect> per object zone, with attributes:
+  id="zone-{{name}}", data-label="{{description}}", data-z-index="{{z}}".
+- All coordinates in SVG coordinate space (0–1920 x, 0–1080 y).
+
+Output ONLY valid SVG. No commentary outside the SVG document.

@@ -1,0 +1,28 @@
+# Stage 2b: JSON vs SVG output format comparison
+# Top 3 models × 3 image inputs × best prompt (few-shot) × {json, svg} × 3 runs = 54 trials
+spike: rs5
+schema: schema/scene-template.schema.json
+ground_truth_dir: ground-truth/
+
+inputs:
+  - id: outdoor-carriage
+    type: image
+    path: ../../assets/archive/scenes/outdoor-carriage/carriage-scene-v1.jpg
+  - id: castle-corridor
+    type: image
+    path: ../../assets/archive/scenes/castle-corridor/corridor-interior-v1.jpg
+  - id: castle-throne-room
+    type: image
+    path: ../../assets/archive/scenes/castle-throne-room/throne-room-v5-eval.jpg
+
+models:
+  - { name: claude-sonnet-4-20250514, provider: anthropic }
+  - { name: gemini-2.5-flash, provider: google }
+  - { name: gemini-2.5-pro, provider: google }
+
+prompts:
+  - { template: prompts/image_input.txt, variation: few-shot, example: ground-truth/outdoor-carriage.json }
+
+output_formats: [json, svg]
+runs_per_trial: 3
+inter_trial_delay_s: 2

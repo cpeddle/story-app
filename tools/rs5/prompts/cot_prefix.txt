@@ -1,0 +1,3 @@
+Before producing the JSON, first describe in 2-3 sentences what you see in the image
+(or imagine from the description): where are the walls, doors, floor areas, and surfaces?
+Then produce the JSON template.

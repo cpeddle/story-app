@@ -1,0 +1,161 @@
+{
+  "treeId": "throneroom_curious_001",
+  "scenarioId": "castle_crown_sharing",
+  "traitId": "CURIOUS",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Oh! Knight, why are you wearing my favorite crown?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Ask if he likes the crown."
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Tell him it’s special to you."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Ask him to give it back."
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Do you like the crown? It means a lot to me."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Say maybe you can share it."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "Say you want it back soon."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "character",
+      "characterLine": {
+        "en": "This crown is very special to me. Can you please give it back?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Offer to let him wear it sometimes."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Ask him to be more careful."
+          },
+          "targetNodeId": "node_6"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Please give the crown back now. It’s mine."
+      },
+      "tone": "GRUMPY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "Say you feel upset."
+          },
+          "targetNodeId": "node_7"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "Try to explain why it matters."
+          },
+          "targetNodeId": "node_8"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Thank you! We can share the crown and have fun."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "character",
+      "characterLine": {
+        "en": "I hope you give it back soon. I miss my crown."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Please be more careful next time. It’s very important."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "character",
+      "characterLine": {
+        "en": "I feel sad when my things are taken without asking."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_8",
+      "speaker": "character",
+      "characterLine": {
+        "en": "The crown is special because it was a gift from my family."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    }
+  ]
+}

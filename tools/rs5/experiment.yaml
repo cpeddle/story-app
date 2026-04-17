@@ -1,0 +1,51 @@
+spike: rs5
+schema: schema/scene-template.schema.json
+ground_truth_dir: ground-truth/
+
+inputs:
+  - id: outdoor-carriage
+    type: image
+    path: ../../assets/archive/scenes/outdoor-carriage/carriage-scene-v1.jpg
+  - id: castle-corridor
+    type: image
+    path: ../../assets/archive/scenes/castle-corridor/corridor-interior-v1.jpg
+  - id: castle-throne-room
+    type: image
+    path: ../../assets/archive/scenes/castle-throne-room/throne-room-v5-eval.jpg
+  - id: text-outdoor-carriage
+    type: text
+    path: text-descriptions/outdoor-carriage.txt
+  - id: text-castle-corridor
+    type: text
+    path: text-descriptions/castle-corridor.txt
+  - id: text-childs-bedroom
+    type: text
+    path: text-descriptions/childs-bedroom.txt
+
+models:
+  # Commercial (cloud API — keys required in .env)
+  - { name: claude-sonnet-4-20250514, provider: anthropic }
+  - { name: gpt-4o, provider: openai }
+  - { name: gpt-4o-mini, provider: openai }
+  - { name: gemini-2.5-pro, provider: google }
+  - { name: gemini-2.5-flash, provider: google }
+  - { name: pixtral-large-latest, provider: mistral }
+  # Open-source (local via LM Studio — IDs from `curl http://localhost:1234/v1/models`)
+  - { name: qwen/qwen3-vl-4b, provider: lmstudio }
+  - { name: qwen2.5-vl-3b-instruct, provider: lmstudio }
+  - { name: google/gemma-4-e2b, provider: lmstudio }
+  - { name: google/gemma-3-4b, provider: lmstudio }
+
+prompts:
+  - { template: prompts/image_input.txt, variation: zero-shot }
+  - { template: prompts/image_input.txt, variation: few-shot, example: ground-truth/outdoor-carriage.json }
+  - { template: prompts/image_input.txt, variation: cot, prefix: prompts/cot_prefix.txt }
+  - { template: prompts/image_input.txt, variation: two-pass, step1: prompts/two_pass_step1.txt, step2: prompts/two_pass_step2.txt }
+  - { template: prompts/text_input.txt, variation: zero-shot }
+  - { template: prompts/text_input.txt, variation: few-shot, example: ground-truth/outdoor-carriage.json }
+  - { template: prompts/text_input.txt, variation: cot, prefix: prompts/cot_prefix.txt }
+  - { template: prompts/text_input.txt, variation: two-pass, step1: prompts/two_pass_step1.txt, step2: prompts/two_pass_step2.txt }
+
+output_formats: [json, svg]
+runs_per_trial: 3
+inter_trial_delay_s: 2

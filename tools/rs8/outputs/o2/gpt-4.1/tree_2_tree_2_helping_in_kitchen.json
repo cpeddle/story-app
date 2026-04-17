@@ -1,0 +1,103 @@
+{
+  "treeId": "courtyard_kind_001",
+  "scenarioId": "castle_kitchen_help",
+  "traitId": "KIND",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Princess, can you help me carry these heavy bags of flour to the kitchen?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Of course, I'll help!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "Maybe we can ask someone else."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Let’s carry them together and sing a song!"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Thank you, Princess! You are very kind. With your help, the kitchen will have fresh bread."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Oh, I see. Maybe the gardener can help us. But I hoped you would help."
+      },
+      "tone": "NEUTRAL",
+      "branches": [
+        {
+          "branchId": "br_2_1",
+          "playerLabel": {
+            "en": "Wait, I changed my mind. I will help!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_2_2",
+          "playerLabel": {
+            "en": "Yes, let’s find the gardener."
+          },
+          "targetNodeId": "node_5"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "character",
+      "characterLine": {
+        "en": "That sounds fun! Singing will make the work easy. Let’s go, Princess!"
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Thank you, Princess! You are so kind. Now the bags will get to the kitchen fast."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Alright. I wish you could help, but maybe next time."
+      },
+      "tone": "GRUMPY",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    }
+  ]
+}

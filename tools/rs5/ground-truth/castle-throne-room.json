@@ -1,0 +1,83 @@
+{
+  "sceneId": "castle-throne-room",
+  "displayNameKey": "scene_castle_throne_room",
+  "descriptionKey": "scene_castle_throne_room_desc",
+  "sceneType": "indoor",
+  "background": {
+    "assetPath": "scenes/castle-throne-room/background.svg",
+    "width": 1920,
+    "height": 1080
+  },
+  "doors": [
+    {
+      "id": "door-left",
+      "position": { "x": 0.08, "y": 0.37 },
+      "size": { "w": 0.06, "h": 0.19 },
+      "targetSceneId": "castle-corridor",
+      "targetDoorId": "door-right-back",
+      "spawnPoint": { "x": 0.14, "y": 0.55 },
+      "spriteKey": "door_side",
+      "interactionRadius": 0.06
+    },
+    {
+      "id": "door-right",
+      "position": { "x": 0.92, "y": 0.37 },
+      "size": { "w": 0.06, "h": 0.19 },
+      "targetSceneId": "castle-corridor",
+      "targetDoorId": "door-left-back",
+      "spawnPoint": { "x": 0.86, "y": 0.55 },
+      "spriteKey": "door_side",
+      "interactionRadius": 0.06
+    }
+  ],
+  "spawnPoints": [
+    {
+      "id": "spawn-center",
+      "position": { "x": 0.50, "y": 0.82 },
+      "purpose": "initial"
+    },
+    {
+      "id": "spawn-near-throne",
+      "position": { "x": 0.50, "y": 0.72 },
+      "purpose": "general"
+    },
+    {
+      "id": "spawn-left-side",
+      "position": { "x": 0.22, "y": 0.78 },
+      "purpose": "general"
+    }
+  ],
+  "objectZones": [
+    {
+      "id": "zone-throne-platform",
+      "bounds": { "x": 0.35, "y": 0.30, "w": 0.30, "h": 0.42 },
+      "label": "throne-platform",
+      "zIndex": 5
+    },
+    {
+      "id": "zone-left-bench",
+      "bounds": { "x": 0.10, "y": 0.62, "w": 0.18, "h": 0.12 },
+      "label": "stone-bench-left",
+      "zIndex": 3
+    },
+    {
+      "id": "zone-right-bench",
+      "bounds": { "x": 0.72, "y": 0.62, "w": 0.18, "h": 0.12 },
+      "label": "stone-bench-right",
+      "zIndex": 3
+    },
+    {
+      "id": "zone-main-floor",
+      "bounds": { "x": 0.15, "y": 0.72, "w": 0.70, "h": 0.18 },
+      "label": "main-floor",
+      "zIndex": 1
+    },
+    {
+      "id": "zone-red-carpet",
+      "bounds": { "x": 0.40, "y": 0.65, "w": 0.20, "h": 0.30 },
+      "label": "red-carpet",
+      "zIndex": 2
+    }
+  ],
+  "defaultObjects": []
+}

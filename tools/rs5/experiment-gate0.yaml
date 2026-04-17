@@ -1,0 +1,26 @@
+# Gate 0: Quick image trial — answers OQ-10 (image vs text-only)
+# 1 model × 3 images × 1 prompt × 3 runs = 9 trials (~$0.15–0.45)
+spike: rs5
+schema: schema/scene-template.schema.json
+ground_truth_dir: ground-truth/
+
+inputs:
+  - id: outdoor-carriage
+    type: image
+    path: ../../assets/archive/scenes/outdoor-carriage/carriage-scene-v1.jpg
+  - id: castle-corridor
+    type: image
+    path: ../../assets/archive/scenes/castle-corridor/corridor-interior-v1.jpg
+  - id: castle-throne-room
+    type: image
+    path: ../../assets/archive/scenes/castle-throne-room/throne-room-v5-eval.jpg
+
+models:
+  - { name: claude-sonnet-4-20250514, provider: anthropic }
+
+prompts:
+  - { template: prompts/image_input.txt, variation: zero-shot }
+
+output_formats: [json]
+runs_per_trial: 3
+inter_trial_delay_s: 2

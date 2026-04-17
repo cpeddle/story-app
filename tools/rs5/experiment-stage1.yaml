@@ -1,0 +1,45 @@
+# Stage 1: Zero-shot baseline for all available models
+# Models: 3 commercial (Anthropic + Google) + 4 local VLMs = 7 models
+# Trials: 7 × 6 inputs × 1 prompt × 3 runs = 126 trials
+spike: rs5
+schema: schema/scene-template.schema.json
+ground_truth_dir: ground-truth/
+
+inputs:
+  - id: outdoor-carriage
+    type: image
+    path: ../../assets/archive/scenes/outdoor-carriage/carriage-scene-v1.jpg
+  - id: castle-corridor
+    type: image
+    path: ../../assets/archive/scenes/castle-corridor/corridor-interior-v1.jpg
+  - id: castle-throne-room
+    type: image
+    path: ../../assets/archive/scenes/castle-throne-room/throne-room-v5-eval.jpg
+  - id: text-outdoor-carriage
+    type: text
+    path: text-descriptions/outdoor-carriage.txt
+  - id: text-castle-corridor
+    type: text
+    path: text-descriptions/castle-corridor.txt
+  - id: text-childs-bedroom
+    type: text
+    path: text-descriptions/childs-bedroom.txt
+
+models:
+  # Commercial (cloud API)
+  - { name: claude-sonnet-4-20250514, provider: anthropic }
+  - { name: gemini-2.5-pro, provider: google }
+  - { name: gemini-2.5-flash, provider: google }
+  # Open-source (local via LM Studio — all 4 downloaded VLMs)
+  - { name: qwen/qwen3-vl-4b, provider: lmstudio }
+  - { name: qwen2.5-vl-3b-instruct, provider: lmstudio }
+  - { name: google/gemma-4-e2b, provider: lmstudio }
+  - { name: google/gemma-3-4b, provider: lmstudio }
+
+prompts:
+  - { template: prompts/image_input.txt, variation: zero-shot }
+  - { template: prompts/text_input.txt, variation: zero-shot }
+
+output_formats: [json]
+runs_per_trial: 3
+inter_trial_delay_s: 2

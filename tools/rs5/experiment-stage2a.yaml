@@ -1,0 +1,47 @@
+# Stage 2a: Prompt refinement — top 3 models × new prompt variations
+# Models: Claude, Gemini 2.5 Flash, Gemini 2.5 Pro
+# Prompts: few-shot, cot, two-pass (zero-shot baseline already in Stage 1 results)
+# Trials: 3 × 6 inputs × 3 prompts × 3 runs = 162 trials
+spike: rs5
+schema: schema/scene-template.schema.json
+ground_truth_dir: ground-truth/
+
+inputs:
+  - id: outdoor-carriage
+    type: image
+    path: ../../assets/archive/scenes/outdoor-carriage/carriage-scene-v1.jpg
+  - id: castle-corridor
+    type: image
+    path: ../../assets/archive/scenes/castle-corridor/corridor-interior-v1.jpg
+  - id: castle-throne-room
+    type: image
+    path: ../../assets/archive/scenes/castle-throne-room/throne-room-v5-eval.jpg
+  - id: text-outdoor-carriage
+    type: text
+    path: text-descriptions/outdoor-carriage.txt
+  - id: text-castle-corridor
+    type: text
+    path: text-descriptions/castle-corridor.txt
+  - id: text-childs-bedroom
+    type: text
+    path: text-descriptions/childs-bedroom.txt
+
+models:
+  - { name: claude-sonnet-4-20250514, provider: anthropic }
+  - { name: gemini-2.5-flash, provider: google }
+  - { name: gemini-2.5-pro, provider: google }
+
+prompts:
+  # Few-shot: append outdoor-carriage ground truth as example
+  - { template: prompts/image_input.txt, variation: few-shot, example: ground-truth/outdoor-carriage.json }
+  - { template: prompts/text_input.txt, variation: few-shot, example: ground-truth/outdoor-carriage.json }
+  # Chain-of-thought: appends reasoning prefix
+  - { template: prompts/image_input.txt, variation: cot }
+  - { template: prompts/text_input.txt, variation: cot }
+  # Two-pass: step 1 describe layout, step 2 convert to JSON
+  - { template: prompts/image_input.txt, variation: two-pass }
+  - { template: prompts/text_input.txt, variation: two-pass }
+
+output_formats: [json]
+runs_per_trial: 3
+inter_trial_delay_s: 2

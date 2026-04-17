@@ -1,0 +1,81 @@
+{
+  "sceneId": "castle-corridor",
+  "displayNameKey": "scene_castle_corridor",
+  "descriptionKey": "scene_castle_corridor_desc",
+  "sceneType": "indoor",
+  "background": {
+    "assetPath": "scenes/castle-corridor/background.svg",
+    "width": 1920,
+    "height": 1080
+  },
+  "doors": [
+    {
+      "id": "door-left-front",
+      "position": { "x": 0.12, "y": 0.55 },
+      "size": { "w": 0.08, "h": 0.28 },
+      "targetSceneId": "bedroom-left",
+      "targetDoorId": "door-corridor",
+      "spawnPoint": { "x": 0.18, "y": 0.75 },
+      "spriteKey": "door_wooden",
+      "interactionRadius": 0.06
+    },
+    {
+      "id": "door-right-front",
+      "position": { "x": 0.84, "y": 0.55 },
+      "size": { "w": 0.08, "h": 0.28 },
+      "targetSceneId": "bedroom-right",
+      "targetDoorId": "door-corridor",
+      "spawnPoint": { "x": 0.80, "y": 0.75 },
+      "spriteKey": "door_wooden",
+      "interactionRadius": 0.06
+    },
+    {
+      "id": "door-far-end",
+      "position": { "x": 0.49, "y": 0.42 },
+      "size": { "w": 0.04, "h": 0.12 },
+      "targetSceneId": "castle-corridor-passage",
+      "targetDoorId": "door-interior-end",
+      "spawnPoint": { "x": 0.49, "y": 0.68 },
+      "spriteKey": "door_archway",
+      "interactionRadius": 0.05
+    }
+  ],
+  "spawnPoints": [
+    {
+      "id": "spawn-center",
+      "position": { "x": 0.50, "y": 0.78 },
+      "purpose": "initial"
+    },
+    {
+      "id": "spawn-near-left-door",
+      "position": { "x": 0.18, "y": 0.75 },
+      "purpose": "general"
+    },
+    {
+      "id": "spawn-near-right-door",
+      "position": { "x": 0.80, "y": 0.75 },
+      "purpose": "general"
+    }
+  ],
+  "objectZones": [
+    {
+      "id": "zone-corridor-floor",
+      "bounds": { "x": 0.10, "y": 0.68, "w": 0.80, "h": 0.22 },
+      "label": "corridor-floor",
+      "zIndex": 1
+    },
+    {
+      "id": "zone-left-carpet",
+      "bounds": { "x": 0.20, "y": 0.72, "w": 0.25, "h": 0.15 },
+      "label": "carpet-area-left",
+      "zIndex": 2
+    },
+    {
+      "id": "zone-right-carpet",
+      "bounds": { "x": 0.55, "y": 0.72, "w": 0.25, "h": 0.15 },
+      "label": "carpet-area-right",
+      "zIndex": 2
+    }
+  ],
+  "defaultObjects": []
+}

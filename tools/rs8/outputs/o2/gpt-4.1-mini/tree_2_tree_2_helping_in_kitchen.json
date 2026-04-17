@@ -1,0 +1,144 @@
+{
+  "treeId": "courtyard_kind_001",
+  "scenarioId": "castle_kitchen_help",
+  "traitId": "KIND",
+  "rootNodeId": "node_0",
+  "nodes": [
+    {
+      "nodeId": "node_0",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Hello, Princess! Could you help me carry these heavy bags of flour to the kitchen?"
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_0_1",
+          "playerLabel": {
+            "en": "Yes, I will help you!"
+          },
+          "targetNodeId": "node_1"
+        },
+        {
+          "branchId": "br_0_2",
+          "playerLabel": {
+            "en": "I am a little busy now."
+          },
+          "targetNodeId": "node_2"
+        },
+        {
+          "branchId": "br_0_3",
+          "playerLabel": {
+            "en": "Can I help after a short rest?"
+          },
+          "targetNodeId": "node_3"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_1",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Thank you so much! Your help means a lot."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_1_1",
+          "playerLabel": {
+            "en": "Let's carry the bags together."
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_1_2",
+          "playerLabel": {
+            "en": "I will carry one bag first."
+          },
+          "targetNodeId": "node_5"
+        },
+        {
+          "branchId": "br_1_3",
+          "playerLabel": {
+            "en": "Let's take small breaks while carrying."
+          },
+          "targetNodeId": "node_6"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_2",
+      "speaker": "character",
+      "characterLine": {
+        "en": "I understand. Maybe another time then."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "MOOD_NEGATIVE"
+    },
+    {
+      "nodeId": "node_3",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Of course! Rest well, then we can carry the bags."
+      },
+      "tone": "FRIENDLY",
+      "branches": [
+        {
+          "branchId": "br_3_1",
+          "playerLabel": {
+            "en": "I am ready now!"
+          },
+          "targetNodeId": "node_4"
+        },
+        {
+          "branchId": "br_3_2",
+          "playerLabel": {
+            "en": "Maybe a little longer rest."
+          },
+          "targetNodeId": "node_7"
+        }
+      ]
+    },
+    {
+      "nodeId": "node_4",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Great! Let’s carry them together. It will be faster."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_5",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Good idea! I will carry the other bags."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_6",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Taking breaks is smart. Let’s do it carefully."
+      },
+      "tone": "FRIENDLY",
+      "branches": [],
+      "outcome": "MOOD_POSITIVE"
+    },
+    {
+      "nodeId": "node_7",
+      "speaker": "character",
+      "characterLine": {
+        "en": "Okay, I will wait. Let me know when you are ready."
+      },
+      "tone": "NEUTRAL",
+      "branches": [],
+      "outcome": "NEUTRAL"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Here is an example of a correctly formatted scene template for reference:
+{example}
+
+Now produce the template for the provided input.

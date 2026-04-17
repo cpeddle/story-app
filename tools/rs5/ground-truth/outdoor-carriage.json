@@ -1,0 +1,60 @@
+{
+  "sceneId": "outdoor-carriage",
+  "displayNameKey": "scene_outdoor_carriage",
+  "descriptionKey": "scene_outdoor_carriage_desc",
+  "sceneType": "outdoor",
+  "background": {
+    "assetPath": "scenes/outdoor-carriage/background.svg",
+    "width": 1920,
+    "height": 1080
+  },
+  "doors": [
+    {
+      "id": "door-castle-path",
+      "position": { "x": 0.03, "y": 0.65 },
+      "size": { "w": 0.06, "h": 0.22 },
+      "targetSceneId": "castle-corridor",
+      "targetDoorId": "door-outdoor",
+      "spawnPoint": { "x": 0.10, "y": 0.78 },
+      "spriteKey": "door_castle_gate",
+      "interactionRadius": 0.06
+    },
+    {
+      "id": "door-garden",
+      "position": { "x": 0.95, "y": 0.62 },
+      "size": { "w": 0.05, "h": 0.20 },
+      "targetSceneId": "garden",
+      "targetDoorId": "door-path",
+      "spawnPoint": { "x": 0.90, "y": 0.78 },
+      "spriteKey": "door_garden_path",
+      "interactionRadius": 0.06
+    }
+  ],
+  "spawnPoints": [
+    {
+      "id": "spawn-center",
+      "position": { "x": 0.50, "y": 0.80 },
+      "purpose": "initial"
+    },
+    {
+      "id": "spawn-near-carriage",
+      "position": { "x": 0.55, "y": 0.78 },
+      "purpose": "general"
+    }
+  ],
+  "objectZones": [
+    {
+      "id": "zone-carriage",
+      "bounds": { "x": 0.55, "y": 0.50, "w": 0.22, "h": 0.35 },
+      "label": "carriage",
+      "zIndex": 5
+    },
+    {
+      "id": "zone-path-floor",
+      "bounds": { "x": 0.05, "y": 0.82, "w": 0.90, "h": 0.15 },
+      "label": "path-floor",
+      "zIndex": 1
+    }
+  ],
+  "defaultObjects": []
+}

@@ -1,0 +1,82 @@
+{
+  "overall_pass": true,
+  "model": "gpt-4.1-mini",
+  "total_cost": 0.004281,
+  "results": [
+    {
+      "file": "tree_1_tree_1_sharing_the_crown.json",
+      "meta": {
+        "latency_ms": 23882,
+        "in_tokens": 1055,
+        "out_tokens": 1149,
+        "cost_usd": 0.00226,
+        "error": null
+      },
+      "validation": {
+        "completeness_ok": true,
+        "missing_node_ids": [],
+        "missing_nl_fields": [],
+        "fd_score": 95.16,
+        "fd_ok": true,
+        "overall_pass": true
+      },
+      "error": null
+    },
+    {
+      "file": "tree_2_tree_2_helping_in_kitchen.json",
+      "meta": {
+        "latency_ms": 11115,
+        "in_tokens": 965,
+        "out_tokens": 1022,
+        "cost_usd": 0.002021,
+        "error": null
+      },
+      "validation": {
+        "completeness_ok": true,
+        "missing_node_ids": [],
+        "missing_nl_fields": [],
+        "fd_score": 91.02,
+        "fd_ok": true,
+        "overall_pass": true
+      },
+      "error": null
+    }
+  ],
+  "spot_checks": [
+    {
+      "nodeId": "node_2",
+      "type": "characterLine",
+      "tone": "FRIENDLY",
+      "en": "This crown is very special to me. Can you please give it back?",
+      "nl": "Deze kroon is heel speciaal voor mij. Kun je hem alsjeblieft teruggeven?"
+    },
+    {
+      "nodeId": "node_8",
+      "type": "characterLine",
+      "tone": "NEUTRAL",
+      "en": "The crown is special because it was a gift from my family.",
+      "nl": "De kroon is speciaal omdat het een cadeau van mijn familie is."
+    },
+    {
+      "nodeId": "node_6",
+      "type": "characterLine",
+      "tone": "NEUTRAL",
+      "en": "Please be more careful next time. It’s very important.",
+      "nl": "Let de volgende keer alsjeblieft beter op. Het is heel belangrijk."
+    },
+    {
+      "nodeId": "node_0",
+      "type": "characterLine",
+      "tone": "FRIENDLY",
+      "en": "Hello, Princess! Could you help me carry these heavy bags of flour to the kitchen?",
+      "nl": "Hallo, Prinses! Kun jij me helpen om deze zware zakken meel naar de keuken te dragen?"
+    },
+    {
+      "nodeId": "node_4",
+      "type": "characterLine",
+      "tone": "FRIENDLY",
+      "en": "Great! Let’s carry them together. It will be faster.",
+      "nl": "Geweldig! Laten we ze samen dragen. Dan gaat het sneller."
+    }
+  ]
+}
