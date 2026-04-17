@@ -1,0 +1,17 @@
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.properties
+local.properties
+*.iml
+.idea/
+.DS_Store
+*.apk
+*.aab
+
+# Python / LLM eval tooling
+.env
+tools/rs5/results/*.json
+tools/rs5/results/*.csv
+__pycache__/
+*.pyc
+.venv/
